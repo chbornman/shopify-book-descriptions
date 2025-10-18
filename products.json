@@ -1,0 +1,99 @@
+{
+  "products": [
+    {
+      "id": 1001,
+      "title": "The Great Gatsby",
+      "body_html": "",
+      "variants": [
+        {
+          "id": 2001,
+          "sku": "BOOK-001",
+          "metafields": [
+            {
+              "namespace": "product",
+              "key": "isbn",
+              "value": "9780743273565",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "title": "To Kill a Mockingbird",
+      "body_html": "",
+      "variants": [
+        {
+          "id": 2002,
+          "sku": "BOOK-002",
+          "metafields": [
+            {
+              "namespace": "product",
+              "key": "isbn",
+              "value": "9780061120084",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "title": "1984",
+      "body_html": "",
+      "variants": [
+        {
+          "id": 2003,
+          "sku": "BOOK-003",
+          "metafields": [
+            {
+              "namespace": "product",
+              "key": "isbn",
+              "value": "9780451524935",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1004,
+      "title": "Pride and Prejudice",
+      "body_html": "",
+      "variants": [
+        {
+          "id": 2004,
+          "sku": "BOOK-004",
+          "metafields": [
+            {
+              "namespace": "product",
+              "key": "isbn",
+              "value": "9780141439518",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1005,
+      "title": "The Catcher in the Rye",
+      "body_html": "",
+      "variants": [
+        {
+          "id": 2005,
+          "sku": "BOOK-005",
+          "metafields": [
+            {
+              "namespace": "product",
+              "key": "isbn",
+              "value": "9780316769174",
+              "type": "single_line_text_field"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
