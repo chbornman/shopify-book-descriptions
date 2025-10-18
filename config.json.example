@@ -1,4 +1,4 @@
 {
-  "shop_url": "your-shop.myshopify.com",
-  "access_token": "your-shopify-access-token"
+  "shop_url": "your-store-name.myshopify.com",
+  "access_token": "shpat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
