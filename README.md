@@ -46,12 +46,7 @@ python3 get_descriptions.py products.json
 
 ### 3. Set Up Shopify Credentials (When Ready)
 
-```bash
-# Copy the example config
-cp config.json.example config.json
-
-# Edit config.json with your store details
-```
+Edit the `config.json` file with your store details (the file is already in the repository).
 
 ### 4. Update Your Shopify Store
 
@@ -335,13 +330,11 @@ You can find it in your Shopify admin URL bar.
 
 ## Part 8: Configure Shopify Connection
 
-1. In the folder where you downloaded the tool, find the file `config.json.example`
+1. In the folder where you downloaded the tool, find the file `config.json`
 
-2. Make a copy of it and rename it to `config.json`
+2. Open `config.json` in a text editor (Notepad on Windows, TextEdit on Mac)
 
-3. Open `config.json` in a text editor (Notepad on Windows, TextEdit on Mac)
-
-4. Fill in your information:
+3. Fill in your information:
    ```json
    {
      "shop_url": "your-store-name.myshopify.com",
@@ -349,7 +342,7 @@ You can find it in your Shopify admin URL bar.
    }
    ```
 
-5. Save the file
+4. Save the file
 
 **Security Warning**: Never share your `config.json` file or post it online. It contains your store's access credentials!
 
@@ -530,8 +523,7 @@ This workflow ensures you never risk accidentally damaging your live store data.
 - **update_descriptions.py** - Old combined script (deprecated, don't use)
 
 ### Configuration
-- **config.json** - Your Shopify credentials (you create this)
-- **config.json.example** - Template for your config file
+- **config.json** - Your Shopify credentials (edit this file with your store details)
 
 ### Data Files
 - **products.json** - Sample products with 5 classic books (included for testing)
