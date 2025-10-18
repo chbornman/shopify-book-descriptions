@@ -17,6 +17,25 @@ You'll need:
 - Products in Shopify that have ISBN numbers stored in metafields
 - About 30-45 minutes to set everything up
 
+### ⚠️ IMPORTANT: Test First on a Development Store
+
+**We STRONGLY recommend testing this tool on a Shopify development/test store before running it on your live production store.**
+
+**Why?** This tool will modify your product descriptions. While it only updates descriptions and doesn't delete or modify other product data, it's always safer to test first.
+
+**How to create a development store:**
+
+1. Go to https://www.shopify.com/partners
+2. Sign up for a free Shopify Partner account
+3. Once logged in, click **Stores** in the left sidebar
+4. Click **Add store** → **Create development store**
+5. Fill out the store details and create it
+6. Add a few test products with ISBN metafields
+7. Run this tool on the development store first
+8. Once you're confident everything works correctly, use it on your production store
+
+**Development stores are completely free and give you a safe environment to test without any risk to your live store.**
+
 ---
 
 ## Part 1: Installing Python (If You Don't Have It)
@@ -221,6 +240,10 @@ Your `products.json` file should look like this:
 
 ## Part 8: Run the Tool
 
+### ⚠️ Remember: Test on a Development Store First!
+
+Before running on your live store, make sure you've tested on a development store (see "Before You Start" section).
+
 ### On Windows:
 1. Open Command Prompt
 2. Navigate to your project folder:
@@ -328,12 +351,23 @@ pip3 install -r requirements.txt
 - It does not modify titles, prices, variants, or other product information
 - The tool does not delete any existing data
 
-### Testing First
-If you're nervous about running this on your live store:
-1. Create a Shopify development store (free from Shopify Partners program)
-2. Add a few test products with ISBN metafields
-3. Run the tool on the test store first
-4. Once you're comfortable, run it on your live store
+### Testing on a Development Store (Recommended Workflow)
+
+**Step-by-step process for safe testing:**
+
+1. **Create a development store** (free from Shopify Partners program at https://www.shopify.com/partners)
+2. **Add a few test products** with ISBN metafields to the development store
+3. **Export those test products** as `products.json`
+4. **Create API credentials** for the development store (follow Part 4)
+5. **Update your `config.json`** with the development store's URL and access token
+6. **Run the tool** on the development store
+7. **Verify the results** look correct
+8. **Once confident**, switch to your production store:
+   - Export products from your production store
+   - Update `config.json` with production store credentials
+   - Run the tool on production
+
+This workflow ensures you never risk accidentally damaging your live store data.
 
 ---
 
